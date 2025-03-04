@@ -35,7 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.CrudDemoApplication.executor": "Debug",
+    "Application.CrudDemoApplication.executor": "Run",
     "Application.CruddemoApplication.executor": "Run",
     "Application.EmployeeRestController.executor": "Run",
     "Application.Unnamed.executor": "Coverage",
@@ -46,13 +46,18 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/daytona/Desktop/SpringBoot/00-spring-boot-rest-security-employee-starter-code",
+    "last_opened_file_path": "C:/Users/daytona/Desktop/SpringBoot/fooddeliveryapp",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.daytona.cruddemo.security" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />

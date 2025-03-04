@@ -3,12 +3,10 @@ package com.daytona.cruddemo.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.io.Serializable;
-
 @Entity
 @Table(name = "employee")
 @Data
-public class Employee  {
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

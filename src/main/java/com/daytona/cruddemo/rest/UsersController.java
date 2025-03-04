@@ -1,6 +1,5 @@
 package com.daytona.cruddemo.rest;
 
-import com.daytona.cruddemo.entity.Role;
 import com.daytona.cruddemo.entity.Users;
 import com.daytona.cruddemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/users")
 public class UsersController {
 
-        @Autowired
-        private UserService userService;
+    @Autowired
+    private UserService userService;
 
     @PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody Users user) {
@@ -21,16 +20,21 @@ public class UsersController {
         return ResponseEntity.ok("User registered successfully!");
     }
 
-        @PutMapping("/disable/{username}")
-        public ResponseEntity<String> disableUser(@PathVariable String username) {
-            userService.disableUser(username);
-            return ResponseEntity.ok("User disabled successfully!");
-        }
+    @PostMapping("/login")
+    public String login(@RequestBody Users user) {
+        return userService.verify(user);
+    }
 
-        @PutMapping("/enable/{username}")
-        public ResponseEntity<String> enableUser(@PathVariable String username) {
-            userService.enableUser(username);
-            return ResponseEntity.ok("User enabled successfully!");
-        }
+    @PutMapping("/disable/{username}")
+    public ResponseEntity<String> disableUser(@PathVariable String username) {
+        userService.disableUser(username);
+        return ResponseEntity.ok("User disabled successfully!");
+    }
+
+    @PutMapping("/enable/{username}")
+    public ResponseEntity<String> enableUser(@PathVariable String username) {
+        userService.enableUser(username);
+        return ResponseEntity.ok("User enabled successfully!");
+    }
 
 }

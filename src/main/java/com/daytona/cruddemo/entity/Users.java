@@ -32,7 +32,8 @@ public class Users {
         this.enabled = enabled;
     }
 
-    public Users() {}
+    public Users() {
+    }
 
     public String getUsername() {
         return username;
